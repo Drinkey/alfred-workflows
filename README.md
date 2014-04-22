@@ -52,3 +52,22 @@ Snapshot-1
 Snapshot-2
 
 ![/WooYun-papers/wooyun-papers-snapshot-2.png](/WooYun-papers/wooyun-papers-snapshot-2.png)
+
+#[2014/4/22] Shuttle Launcher
+
+Launch connection with Shuttle config.  
+
+![/Shuttle-Launcher/shuttle.png](Shuttle-Launcher/shuttle.png)
+
+If you're using Shuttle to manage your connections, this work would help you.
+
+Shuttle is just a connection organizer, with a JSON format configuration file. This workflow will read the JSON file first and list it in Alfred drop list. Choose the item will open a terminal session with login command.
+
+Snapshot-1
+
+![/Shuttle-Launcher/shuttle-launcher-snapshot-1.png](/Shuttle-Launcher/shuttle-launcher-snapshot-1.png)
+
+Snapshot-2
+
+![/Shuttle-Launcher/shuttle-launcher-snapshot-2.png](/Shuttle-Launcher/shuttle-launcher-snapshot-2.png)
+
