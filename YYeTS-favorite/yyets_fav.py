@@ -10,8 +10,8 @@ import json,time
 base_url = 'http://www.yyets.com'
 
 data = {}
-data['account'] = "USER_NAME"
-data['password'] = "PASSWORD"
+data['account'] = "YOUR_USERNAME"
+data['password'] = "YOUR_PASSWORD"
 data['from'] = "loginpage"
 
 # Setup cookie and user-agent in HTTP header
@@ -52,6 +52,15 @@ def req(type,page,request=''):
 
 
 resp = req('post',base_url+'/User/Login/ajaxLogin',data)
+if (resp is None):
+    print "<?xml version=\"1.0\"?>\n<items>"
+    print "  <item uid=\"yyets\" arg=\""+base_url+"/user/fav\" >"
+    print "    <title>fetch data failed</title>"
+    print "    <subtitle>please verify your network settings</subtitle>"
+    print "    <icon type=\"fileicon\">/Applications/Safari.app/</icon>"
+    print "  </item>"
+    print "</items>"
+    sys.exit(1)
 json_doc = json.loads(resp)
 
 if (json_doc['status'] != 1):
